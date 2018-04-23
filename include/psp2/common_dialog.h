@@ -107,7 +107,7 @@ typedef struct SceCommonDialogParam {
 static inline
 void _sceCommonDialogSetMagicNumber(SceCommonDialogParam *param)
 {
-	param->magic = SCE_COMMON_DIALOG_MAGIC_NUMBER + *(SceUInt32*)&param;
+	param->magic = SCE_COMMON_DIALOG_MAGIC_NUMBER + (SceUInt32)param;
 }
 
 static inline
